@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+
+html {
+	--background-color: #222831;
+	--primary-color: #DDDDDD;
+	--secondary-color: #30475E;
+	--additional-color: #F05454;
+	background-color: var(--background-color, #222831);
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+body { width: auto;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	-webkit-font-smoothing:antialiased;
+ 	-moz-osx-font-smoothing:grayscale;
+}
+
+p {
+	-webkit-font-smoothing:antialiased;
+ 	-moz-osx-font-smoothing:grayscale;
+	font-family: 'Averia Serif Libre', sans-serif;
+	font-size: large;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	top: auto;
+	overflow: hidden;
+}
+
+
+#heading {
+	position: relative;
+	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	background-color: var(--primary-color, #DDDDDD);
+}
+
+#title {
+	font-family: 'Averia Serif Libre', sans-serif;
+	font-weight: 700;
+}
+
+#subtitle {
+	font-family: 'Averia Serif Libre', sans-serif;
+	font-weight: 300;
+}
+
+#img-div {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	display: flex;
+	justify-content: center;
+}
+
+#tribute-info {
+	position: relative;
+	background-color: var(--primary-color, #DDDDDD);
+	padding: 2vh 2vh 2vh 2vh;
+}
+
+#introduction-heading {
+	font-family: 'Averia Serif Libre', sans-serif;
+	font-weight: 600;
+}
+
+#credits {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	background-color: var(--primary-color, #DDDDDD);
+	font-family: 'Averia Serif Libre', sans-serif;
+	font-weight: 300;
+	padding: 2vh 2vh 2vh 2vh;
+	text-align: center;
+}
