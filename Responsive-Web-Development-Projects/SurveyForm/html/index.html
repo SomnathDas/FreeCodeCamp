@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <meta name="description" content="A simple survey form for FreeCodeCamp project.">
+  <meta name="author" content="SomnathDas">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <header id="header">
+    <div id="head" tabindex="1">
+      <h1 id="title">Synthesized Infinity Survey</h1>
+      <p id="description">Thank you for taking time to help us improve our services</p>
+    </div>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Number: (Optional)</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Hobbyist Developer">Hobbyist Developer</option>
+          <option value="Prefer Not To Say">Prefer Not To Say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="radio">Would you recommend our products to a friend?</label>
+        <label>
+          <input name="user-recommend" value="indeed" type="radio" class="input-radio" checked />Indeed</label>
+        <label>
+          <input name="user-recommend" value="probably" type="radio" class="input-radio" />Probably</label>
+        <label>
+          <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        <label><input name="user-recommend" value="never" type="radio" class="input-radio" />Never will</label>
+      </div>
+      <div class="form-group">
+        <label for="checkbox">What would you like to see improved? (Check all that apply)</label>
+        <label> <input type="checkbox" name="want-improvement" value="Pokemon Game" class="input-checkbox">Pokemon Game</label>
+        <label> <input type="checkbox" name="want-improvement" value="Chess Game" class="input-checkbox">Chess Game</label>
+        <label> <input type="checkbox" name="want-improvement" value="Basic Functionality" class="input-checkbox">Basic Functionality</label>
+        <label> <input type="checkbox" name="want-improvement" value="Chat Bot Functionality" class="input-checkbox">Chat Bot Functionality</label>
+      </div>
+      <div class="form-group">
+      <label for="textarea">Any comments or suggestions?</label>
+      <textarea
+        id="comments"
+        class="input-comments"
+        name="comment"
+        placeholder="Please enter your comment or suggestion..."
+      ></textarea>
+    </div>
+    <button id="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
+
+:root {
+  --form-background-color: #eeeeeec4;
+  --background-gradient-color-primary: rgba(253, 29, 29, 0.7);
+  --background-gradient-color-secondary: rgba(41, 50, 60, 0.6);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: white;
+  background-image: linear-gradient(
+      69deg,
+      var(--background-gradient-color-primary, rgba(253, 29, 29, 0.7)),
+      var(--background-gradient-color-secondary, rgba(41, 50, 60, 0.6))
+    ),
+    url(https://source.unsplash.com/SYTO3xs06fU);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+h1 {
+  font-family: "Quicksand", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+label {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+}
+
+.input-comments {
+  resize: vertical;
+}
+
+#header {
+  position: relative;
+  text-align: center;
+}
+
+#survey-form {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 10px;
+  width: 60%;
+  height: auto;
+  background: var(--form-background-color, #eeeeeec4);
+  border-radius: 12px;
+  padding: 2vh 2vh 2vh 2vh;
+}
+
+#submit {
+  border-radius: 8px;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: var(--background-gradient-color-primary);
+}
+
+#submit:focus {
+  background-color: var(--background-gradient-color-secondary);
+  color: white;
+}
